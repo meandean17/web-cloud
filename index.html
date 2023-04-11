@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Exercise 2 - Profile</title>
+
+    <script>
+        function heaven() {
+            document.querySelector('.theme').setAttribute('style', `--max-page-height: ${document.body.clientHeight}px;`);
+            document.querySelectorAll(".angel").forEach(el => {
+                const delay = (Math.random() * 10) * 1000;
+                el.setAttribute('style', `animation-delay: ${delay}ms;`);
+                setTimeout(() => {
+                    el.setAttribute('style', `display: block; left: ${Math.random() * 80}%;`);
+                }, delay);
+            })
+            document.querySelectorAll(".devil").forEach(el => {
+                el.style.display = "none";
+            })
+            document.querySelector(".intro__image").style.backgroundImage = "url(./images/intropic_heaven.jpg)";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function hell() {
+            document.querySelector('.theme').setAttribute('style', `--max-page-height: ${document.body.clientHeight}px;`);
+            document.querySelectorAll(".devil").forEach(el => {
+                const delay = (Math.random() * 10) * 1000;
+                el.setAttribute('style', `animation-delay: ${delay}ms;`);
+                setTimeout(() => {
+                    el.setAttribute('style', `display: block; left: ${Math.random() * 80}%;`);
+                }, delay);
+            })
+            document.querySelectorAll(".angel").forEach(el => {
+                el.style.display = "none";
+            })
+            document.querySelector(".intro__image").style.backgroundImage = "url(./images/intropic_hell.jpg)";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header class="row">
+        <a href="./index.html"><img alt="icon-logo" src="./images/header-icon.png" /></a>
+        <h1>Dean's Webxercises</h1>
+    </header>
+    <section class="intro row">
+        <div class="intro__image"></div>
+        <div class="intro__text col">
+            <h2><strong>WELCOME</strong> to Dean's amazing hub for <b>WEB</b> and <b>CLOUD</b></h2>
+            <p>This page features my works from different courses, among other things.</p>
+        </div>
+    </section>
+    <main>
+        <section class="about col">
+            <h4>About</h4>
+            <p>My programming journey began in highschool with 3 years of C# and some light HTML and JavaScript work.
+            </p>
+            <p>Afterwards my coding endeavors went on standby while I focused on my military service, and they didn't
+                resume until 2021, when I enrolled in Shenkar College in hopes of completing a degree in Software
+                Engineering</p>
+            <p>Now I am in my second year of said degree, and although my coding skills are great, I have a lot to learn
+                before I can become a corporate slave.
+            </p>
+        </section>
+        <section class="exercises col">
+            <h4>Exercises</h4>
+            <div class="cards__container row">
+                <div class="exercises__card col">
+                    <img src="./images/headshot-playlist.png" alt="ex1_img">
+                    <span>Playlist</span>
+                    <a target="_blank" class="custom-button" href="./exercises/ex1/index.html">View</a>
+                </div>
+                <div class="exercises__card col">
+                    <img src="./images/headshot-profile.png" alt="ex1_img">
+                    <span>Profile</span>
+                    <a class="custom-button" href="#">View</a>
+                </div>
+                <div class="exercises__card col">
+                    <img src="./images/headshot-layouts.png" alt="ex1_img">
+                    <span>Layouts</span>
+                    <a target="_blank" class="custom-button" href="./exercises/ex3/index.html">View</a>
+                </div>
+                <div class="exercises__card col">
+                    <img src="./images/headshot-formcompetition.png" alt="ex1_img">
+                    <span>Forms</span>
+                    <a target="_blank" class="custom-button" href="./exercises/ex4/index.html">View</a>
+                </div>
+                <div class="exercises__card col">
+                    <img src="./images/headshot-serverside.png" alt="ex1_img">
+                    <span>Server Side</span>
+                    <a target="_blank" class="custom-button" href="./exercises/ex5/index.html">View</a>
+                </div>
+            </div>
+        </section>
+        <section class="languages">
+            <h4>Programming Languages</h4>
+            <ul class="languages__ul">
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML + CSS</li>
+                <li>Assembly (Mano CPU)</li>
+            </ul>
+        </section>
+        <section class="extra">
+            <h4>Change Theme</h4>
+            <div class="extra__container">
+                <div class="extra__button__container row">
+                    <div class="custom-button" onclick="heaven()">Heaven</div>
+                    <div class="custom-button" onclick="hell()">Hell</div>
+                    <!-- <div class="custom-button special">Special</div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <div class="socials__title">
+                <span>Follow Me</span>
+            </div>
+            <div class="socials__links col">
+                <a href="https://www.linkedin.com/in/dean-shalev-04565a223/">LinkedIn</a>
+                <a href="https://github.com/meandean17/">Github</a>
+                <a href="https://leetcode.com/meandean17/">LeetCode</a>
+            </div>
+        </div>
+        <div class="cr">
+            <p>© 2023 DEAN SHALEV</p>
+        </div>
+    </footer>
+    <div class="theme">
+        <div class="angel"></div>
+        <div class="angel"></div>
+        <div class="angel"></div>
+        <div class="devil"></div>
+        <div class="devil"></div>
+    </div>
+</body>
+
+</html>
