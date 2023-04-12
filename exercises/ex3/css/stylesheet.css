@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    font-family: 'Amiko', sans-serif;
+    min-width: 1140px;
+}
+
+header {
+    background-color: #f6a1a1;
+    font-weight: 400;
+    padding: 52px 0px 38px 0px;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:nth-child(2) {
+    margin-left: 18px;
+}
+
+header a:nth-child(3) {
+    margin-left: 17px;
+}
+
+footer {
+    height: 41px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 91px 315px 145px 244px;
+    width: 881px;
+    gap: 70px;
+}
+
+.content-text {
+    margin-top: 176px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-text h1 {
+    font-size: 72px;
+    line-height: 96px;
+}
+
+.grid-container {
+    width: 437px;
+}
+
+.grid-column-left {
+    row-gap: 7px;
+    margin-top: 44px;
+}
+
+.grid-column-left div:nth-child(1) {
+    width: 75px;
+    height: 23px;
+}
+
+.grid-column-left div:nth-child(2) {
+    width: 136px;
+    height: 46px;
+}
+
+.grid-column-left div:nth-child(3) {
+    width: 134px;
+    height: 404px;
+}
+
+.grid-column-left div:nth-child(4) {
+    width: 75px;
+    height: 23px;
+}
+
+.gcl-bottom {
+    gap: 7px;
+}
+
+.gcl-bottom div:nth-child(1),
+.gcl-bottom div:nth-child(2) {
+    width: 25px;
+    height: 26px;
+}
+
+.grid-column-right {
+    margin-left: 13px;
+}
+
+.gcr-top {
+    gap: 14px;
+}
+
+.gcr-top div:nth-child(1) {
+    margin-top: 44px;
+    width: 246px;
+    height: 352px;
+}
+
+.gcrt-right {
+    gap: 11px;
+}
+
+.gcrt-right div:nth-child(1),
+.gcrt-right div:nth-child(2),
+.gcrt-right div:nth-child(3) {
+    margin: 0px;
+    width: 28px;
+    height: 55px;
+}
+
+.gcrt-right div:nth-child(4) {
+    width: 28px;
+    height: 198px;
+}
+
+.gcr-bottom {
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.gcr-bottom div:nth-child(1) {
+    width: 123px;
+    height: 212px;
+}
+
+
+.gcrb-right {
+    gap: 7px;
+}
+
+.gcrb-right div:nth-child(1) {
+    width: 151px;
+    height: 106px;
+}
+
+.gcrb-right div:nth-child(2) {
+    width: 110px;
+    height: 58px;
+}
+
+.gcrbr-top {
+    gap: 41px;
+}
+
+.gcrbr-top div:nth-child(1),
+.gcrbr-top div:nth-child(2) {
+    width: 55px;
+    height: 105px;
+
+}
+
+.rectangle {
+    background-color: #EBEF18;
+}
