@@ -15,23 +15,31 @@ footer {
 header {
     background-color: #f6a1a1;
     font-weight: 400;
-    padding: 52px 0px 38px 0px;
-    justify-content: center;
-    align-content: center;
+    padding: 34px 0px 38px 0px;
     font-size: 24px;
     line-height: 32px;
 }
 
-header a {
+header nav {
+    justify-content: center;
+}
+
+header nav a {
     text-decoration: none;
     color: #000000;
 }
 
-header a:nth-child(2) {
-    margin-left: 18px;
+header nav a:nth-child(2) {
+    margin-top: 18px;
 }
 
-header a:nth-child(3) {
+header nav a:nth-child(3) {
+    margin-top: 18px;
+    margin-left: 17px;
+}
+
+header nav a:nth-child(4) {
+    margin-top: 18px;
     margin-left: 17px;
 }
 
@@ -47,6 +55,10 @@ footer {
 .col {
     display: flex;
     flex-direction: column;
+}
+
+.current-page-marker {
+    align-items: center;
 }
 
 .container {
@@ -67,9 +79,13 @@ footer {
     line-height: 96px;
 }
 
+/* grid start */
+
 .grid-container {
     width: 437px;
 }
+
+/* left column start */
 
 .grid-column-left {
     row-gap: 7px;
@@ -96,6 +112,8 @@ footer {
     height: 23px;
 }
 
+/* bottom of the left colomn */
+
 .gcl-bottom {
     gap: 7px;
 }
@@ -106,9 +124,15 @@ footer {
     height: 26px;
 }
 
+/* end of left column */
+
+/* start of right column */
+
 .grid-column-right {
     margin-left: 13px;
 }
+
+/* top of right column */
 
 .gcr-top {
     gap: 14px;
@@ -119,6 +143,8 @@ footer {
     width: 246px;
     height: 352px;
 }
+
+/* right side of the top of the right column */
 
 .gcrt-right {
     gap: 11px;
@@ -137,6 +163,10 @@ footer {
     height: 198px;
 }
 
+/* end of top of right column */
+
+/* bottom of right column */
+
 .gcr-bottom {
     gap: 14px;
     margin-top: 16px;
@@ -147,6 +177,7 @@ footer {
     height: 212px;
 }
 
+/* right side of bottom of right column */
 
 .gcrb-right {
     gap: 7px;
@@ -162,6 +193,8 @@ footer {
     height: 58px;
 }
 
+/* top of the right side of the bottom of the right column */
+
 .gcrbr-top {
     gap: 41px;
 }
@@ -173,6 +206,18 @@ footer {
 
 }
 
+/* end of right column */
+
 .rectangle {
     background-color: #EBEF18;
+}
+
+.ellipse {
+    width: 14px;
+    height: 14px;
+    background-color: #F72828;
+    border-radius: 100px;
+    position: relative;
+    /* in the figma file the ellipse is not centered over the word */
+
 }
