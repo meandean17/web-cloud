@@ -78,6 +78,7 @@ const renderSquares = (size) => {
         newsquare.style.height = 80 + (i * 20) + "px";
         newsquare.style.backgroundColor = "black";
         newsquare.style.color = "black";
+        // newsquare.style.padding = i * 20 + "px";
         newsquare.id = "square-" + (i);
         newsquare.classList.add("game-square");
         newsquare.revealed = false;
