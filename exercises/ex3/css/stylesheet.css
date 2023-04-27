@@ -8,15 +8,11 @@ header,
 main,
 footer,
 body {
-    width: 100%;
     font-family: 'Amiko', sans-serif;
-    min-width: 1140px;
-    height: 100%;
 }
 
 header {
     background-color: #f6a1a1;
-    padding: 34px 0px 38px 0px;
 }
 
 .header-dynamic {
@@ -26,7 +22,10 @@ header {
 }
 
 header nav {
+    width: 1440px;
     justify-content: center;
+    background-color: #f6a1a1;
+    padding: 34px 0px 38px 0px;
 }
 
 nav a {
@@ -72,13 +71,16 @@ header nav a:nth-child(4):hover {
 }
 
 
-footer {
+.basic-footer {
     height: 41px;
     background-color: black;
-
+    width: 1440px;
 }
 
 .footer-fixed {
+    width: 1440px;
+    height: 41px;
+    background-color: black;
     bottom: 0;
     position: fixed;
 }
@@ -287,21 +289,22 @@ footer {
 }
 
 .sidebar {
+    margin-left: 151px;
     height: 2103px;
-    width: 169px;
-    position: absolute;
+    min-width: 169px;
+    max-width: 169px;
     top: 122px;
     right: 0;
     background-color: #EBEF18;
 }
 
 .sidebar p {
-    position: absolute;
     display: flex;
+    position: relative;
     align-items: flex-end;
     font-size: 96px;
     line-height: 128px;
-    bottom: 20px;
+    top: 1240px;
     left: 44px;
     text-align: center;
     width: 81px;
@@ -315,20 +318,44 @@ footer {
 
 .wrapper {
     width: 100%;
-    height: 100%;
     align-items: center;
 }
+
+.dynamic-header {}
 
 .dynamic-nav {
     background-color: #E5E5E5;
     width: 372px;
     height: 995px;
     padding: 105px 43px 0px 38px;
+    margin: 0;
+}
+
+.dynamic-nav a:nth-child(2):hover,
+.dynamic-nav a:nth-child(3):hover,
+.dynamic-nav a:nth-child(4):hover {
+    animation: bounce 0.6s linear;
+}
+
+@keyframes bounce {
+    0% {
+        margin-top: 18px;
+    }
+
+    50% {
+        margin-top: 13px;
+    }
+
+    100% {
+        margin-top: 18px;
+    }
 }
 
 .game-container {
     width: 100%;
     height: 995px;
+    padding: 123px 64px;
+    gap: 132px;
 }
 
 .sidebar-alternate {
@@ -346,10 +373,10 @@ footer {
 }
 
 @media screen and (max-width:850px) {
+
     .sidebar-alternate {
         display: none;
-        width: 0;
-        height: 0;
+
     }
 
     .top-row {
