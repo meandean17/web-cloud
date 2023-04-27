@@ -12,6 +12,7 @@ body {
 }
 
 .header-dynamic {
+    background-color: #f6a1a1;
     display: flex;
     padding: 21px 24px 22px 0px;
     justify-content: right;
