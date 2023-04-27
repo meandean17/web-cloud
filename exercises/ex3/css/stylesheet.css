@@ -324,9 +324,9 @@ header nav a:nth-child(4):hover {
 .dynamic-header {}
 
 .dynamic-nav {
+    align-items: flex-start;
     background-color: #E5E5E5;
     width: 372px;
-    height: 995px;
     padding: 105px 43px 0px 38px;
     margin: 0;
 }
@@ -351,18 +351,22 @@ header nav a:nth-child(4):hover {
     }
 }
 
+.top-row {
+    align-items: stretch;
+}
+
 .game-container {
     width: 100%;
-    height: 995px;
+    min-height: 995px;
+    margin-right: 123px;
     padding: 123px 64px;
     gap: 132px;
+    flex-wrap: wrap;
 }
 
 .sidebar-alternate {
     width: 123px;
-    height: 995px;
     background-color: brown;
-    position: absolute;
     right: 0;
 }
 
@@ -389,4 +393,10 @@ header nav a:nth-child(4):hover {
         justify-content: center;
         padding: 27px 0px;
     }
+}
+
+.game-square {
+    text-align: center;
+    font-size: 64px;
+    cursor: pointer;
 }
