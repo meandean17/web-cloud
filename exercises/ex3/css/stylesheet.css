@@ -11,10 +11,6 @@ body {
     font-family: 'Amiko', sans-serif;
 }
 
-header {
-    background-color: #f6a1a1;
-}
-
 .header-dynamic {
     display: flex;
     padding: 21px 24px 22px 0px;
