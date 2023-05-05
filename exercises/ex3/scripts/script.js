@@ -38,9 +38,11 @@ const revealSquare = (square) => {
             setTimeout(() => {
                 square.style.color = "black";
                 square.revealed = false;
-                revealedSquare.style.color = "black";
-                revealedSquare.revealed = false;
-                revealedSquare = null;
+                if (revealedSquare) {
+                    revealedSquare.style.color = "black";
+                    revealedSquare.revealed = false;
+                    revealedSquare = null;
+                }
             }, 800);
         }
     }
