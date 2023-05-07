@@ -11,10 +11,20 @@
     </h2>
     Phone number: <?php echo $_GET["phone"]; ?> <br>
 
-    Items: <br>    
-    <? foreach($_GET['items'] as $value)
+    Items: <br> 
+    <?php 
+        
+        $jc = "Juice";
+       
+     foreach($_GET['items'] as $value)
     {
-        echo $value . ', ';
+        if($value == $jc)
+        {
+            echo "<br>Out of stock for item: " . $value . "<br>";
+        }
+        else {
+            echo $value . ', ';
+        }
     } ?> <br>
 
     Address: <?php echo $_GET["address"]; ?>
