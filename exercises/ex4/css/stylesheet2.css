@@ -30,10 +30,10 @@ body {
 
 }
 
-.gender-area {
-
+.gender-radio-area {
     display: flex;
     gap: 1em;
+    margin-bottom: 15px;
 }
 
 .vid-container {
@@ -91,6 +91,8 @@ body {
     z-index: 2;
     position: absolute;
     transition: opacity 1s, right 2s;
+    gap: 2em;
+    width: 220px;
 }
 
 .btn-area {
@@ -102,11 +104,26 @@ body {
 .form-label {
     color: darkred;
     font-weight: bold;
+    opacity: 1;
+    right: 0;
+    transition:
+        opacity 2s;
+}
+
+.form-check {
+    transform: translateX(0);
+    transition: transform 2s, opacity 2s;
 }
 
 .pulse-input {
     -webkit-animation: pulsing_input .6s ease-out 4s infinite alternate;
     animation: pulsing_input .6s ease-out 4s infinite alternate;
+    right: 0;
+    opacity: 1;
+    position: relative;
+    transition:
+        opacity 2s,
+        right 2s !important;
 }
 
 @keyframes pulsing_input {
@@ -119,6 +136,17 @@ body {
         transform: scale(1.04);
         -webkit-transform: scale(1.04);
     }
+}
+
+.next-btn {
+    background-color: darkred;
+    color: white;
+    border-color: darkred;
+    opacity: 1;
+    right: 0;
+    transition:
+        opacity 2s;
+
 }
 
 /* video.scale2 {
