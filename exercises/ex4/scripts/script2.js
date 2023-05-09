@@ -32,6 +32,7 @@ const submitData = (e) => {
         else if (input.value === 'Female' && input.checked === true || input.value === 'Male' && input.checked === false) {
             form.style.opacity = 0;
             vid.style.opacity = 1;
+            vid.style.visibility = 'visible';
             form.style.zIndex = '1'
             setTimeout(() => {
                 vid.play();
