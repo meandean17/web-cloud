@@ -136,8 +136,8 @@ zoomBtn.onclick = () => {
     vid.style.height = 'auto';
     vid.style.transform = 'scale(8) translateY(11%) translateX(3%)';
     vid.style.opacity = '0';
-    document.body.style.background = 'black';
-    document.querySelector('.main-container').style.background = 'black';
+    document.body.style.backgroundColor = 'black';
+    document.querySelector('.main-container').style.backgroundColor = 'black';
     setTimeout(() => {
         vidContainer.style.overflow = 'hidden';
     }, 2000);
