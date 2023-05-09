@@ -24,6 +24,48 @@ body {
     transition: background-color 3s ease-in-out;
 }
 
+.main-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #FFF;
+    transition: background-color 3s ease-in-out;
+
+
+
+    width: 1280px;
+    position: relative;
+}
+
+.music {
+    background: url('../images/volume_off_FILL1_wght400_GRAD0_opsz48.svg');
+    background-color: rgb(58, 0, 0);
+    border-radius: 100%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 50px;
+    width: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        opacity 2s ease-in;
+    z-index: 901;
+    cursor: pointer;
+    color: white;
+}
+
 .gender-label {
     width: 100%;
     text-align: center;
@@ -32,6 +74,7 @@ body {
 
 .gender-radio-area {
     display: flex;
+    justify-content: center;
     gap: 1em;
     margin-bottom: 15px;
 }
@@ -46,7 +89,7 @@ body {
     position: absolute;
     justify-content: center;
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     left: 46%;
     top: 33%;
     width: 50px;
@@ -55,7 +98,7 @@ body {
     border: none;
     cursor: pointer;
     transition:
-        opacity 2s ease-in-out;
+        opacity 2s ease-in;
 }
 
 #welcome-vid {
@@ -78,12 +121,13 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 25px;
     top: 0;
-    right: 30%;
+    bottom: auto;
+    right: 25%;
     /* opacity: 0; */
     transition:
         top 2s,
+        bottom 2s,
         opacity 2s ease-in;
-
 
 }
 
@@ -128,13 +172,13 @@ body {
 
 @keyframes pulsing_input {
     0% {
-        transform: scale(0.996);
-        -webkit-transform: scale(0.996);
+        transform: scale(0.990);
+        -webkit-transform: scale(0.99);
     }
 
     100% {
-        transform: scale(1.04);
-        -webkit-transform: scale(1.04);
+        transform: scale(1.10);
+        -webkit-transform: scale(1.10);
     }
 }
 
@@ -149,28 +193,62 @@ body {
 
 }
 
-/* video.scale2 {
-        -moz-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -o-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        transform: scale(1.5);
-    } */
-
-/* video:hover {
-    animation: zoom 1s linear;
+.post-submission {
+    position: absolute;
+    right: 25%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: darkred;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 19px;
 }
 
-@keyframes zoom {
-    0% {
-        transform: scale(1);
-    }
+.post-submission {
+    position: absolute;
+    right: 25%;
+    width: 20%;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    color: darkred;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 19px;
+    transition:
+        opacity 2s,
+        top 2s,
+        bottom 2s;
+}
 
-    100% {
-        transform: scale(15);
-    }
-} */
 
+input[type=range] {
+    -webkit-appearance: none;
+    padding-top: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: black;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    /* height: 16px;
+    width: 16px; */
+    border-radius: 50%;
+    background: rgb(114, 41, 41);
+    /* margin-top: -4px; */
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
 
 .coracao {
     width: 30px;
