@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: x-large;
+}
+
+main {
+    height: 100%;
+}
+
+.content-wrapper {
+    background: url(../images/empty_shelf.jpg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.book-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 76%;
+    width: 60%;
+    gap: 8%;
+}
+
+.book-row {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.book-data {
+    background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px);
+    box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 17%;
+}
+
+.shorthand-container {
+    position: absolute;
+}
+
+.book-shorthand {
+    opacity: 0;
+    position: relative;
+    top: 0px;
+    letter-spacing: 1px;
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: bold;
+}
+
+.book-data:hover .book-shorthand {
+    opacity: 1;
+    top: -24px;
+    transition: all 0.5s;
+}
+
+.book-data a {
+    width: 100%;
+}
+
+.book-img {
+    width: 100%;
+    height: 100%;
+}
+
+.book-img-large {
+    background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px), url(https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L.jpg);
+    box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+}
+
+.book-content-wrapper {
+    background: url(../images/empty_single_shelf_desktop.jpg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
+.book-content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.return-button-area {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
