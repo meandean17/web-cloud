@@ -49,7 +49,8 @@ main {
     display: flex;
     height: 100%;
     overflow: hidden;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 8%;
 }
 
 .book-data {
@@ -90,13 +91,24 @@ main {
     height: 100%;
 }
 
+.book-content {
+    max-width: 300px;
+    max-height: 350px;
+    display: flex;
+    aspect-ratio: 1 / 1.1;
+    width: 30%;
+    margin: 0 auto;
+
+}
+
 .book-img-large {
     background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px), url(https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L.jpg);
     box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    margin: auto;
-    width: 300px;
-    height: 400px;
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
 }
 
 .book-content-wrapper {
@@ -104,16 +116,14 @@ main {
     background-position: center;
     background-size: contain;
     width: 100%;
+    height: 100%;
 }
 
-.book-content {
-    display: flex;
-    justify-content: center;
 
-}
 
 .return-button-area {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
+
 }
