@@ -1,0 +1,85 @@
+[
+    {
+        "id": "1",
+        "title": "The Great Philosophers",
+        "price": "12",
+        "category": "Philosophy",
+        "rating": "4.3",
+        "author": "Bryan Magee",
+        "description": "Beginning with the death of Socrates in 399 B.C., and following the strand of philosophical inquiry through the centuries to recent figures such as Bertrand Russell and Wittgenstein, Bryan Magee's con",
+        "image": "images/uploads/thegreatphilosophers.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Catch-22",
+        "price": "13",
+        "category": "Comedy",
+        "rating": "4.4",
+        "author": "Joseph Heller",
+        "description": "Set in Italy during World War II, this is the story of the incomparable, malingering bombardier, Yossarian, a hero who is furious because thousands of people he has never met are trying to kill him. B",
+        "image": "images/uploads/Catch22.jpg"
+    },
+    {
+        "id": "3",
+        "title": "The Way of Kings",
+        "price": "8",
+        "category": "Fantasy",
+        "rating": "4.8",
+        "author": "Brandon Sanderson",
+        "description": "The result of over ten years of planning, writing, and world-building, The Way of Kings is but the opening movement of the Stormlight Archive, a bold masterpiece in the making.",
+        "image": "images/uploads/thewayofkings.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Meditations",
+        "price": "10",
+        "category": "Philosophy",
+        "rating": "4.5",
+        "author": "Marcus Aurelius",
+        "description": "Meditations is a series of personal writings by Marcus Aurelius, Roman Emperor 161–180 CE, setting forth his ideas on Stoic philosophy.",
+        "image": "images/uploads/meditations.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Green Eggs and Ham",
+        "price": "8",
+        "category": "Children",
+        "rating": "4.9",
+        "author": "Dr. Seuss",
+        "description": "I do not like green eggs and ham.",
+        "image": "images/uploads/greeneggsandham.jpg"
+    },
+    {
+        "id": "6",
+        "title": "The Big Poo Hullabaloo",
+        "price": "10",
+        "category": "Children",
+        "rating": "4.3",
+        "author": "Ann Waldon-Schmid",
+        "description": "Where oh where is the best place to poo? Join Little Lou on this silly, charming adventure that concludes with a successful trip to the potty! Lighthearted and fun this book teaches young children about potty training using cheerful rhyming language, vivid illustrations and lively characters.",
+        "image": "images/uploads/thebigpoohullabaloo.jpg"
+    },
+    {
+        "id": "7",
+        "title": "The Idiot",
+        "price": "13",
+        "category": "Fiction",
+        "rating": "3.8",
+        "author": "Elif Batuman",
+        "description": "The year is 1995, and email is new. Selin, the daughter of Turkish immigrants, arrives for her freshman year at Harvard. She signs up for classes in subjects she has never heard of, befriends her char",
+        "image": "images/uploads/theidiot.jpg"
+    },
+    {
+        "id": "8",
+        "title": "Shit, Actually",
+        "price": "14",
+        "category": "Comedy",
+        "rating": "4.3",
+        "author": "Lindy West",
+        "description": "Shit, Actually is a love letter and a break-up note all in one: to the films that shaped us and the ones that ruined us. More often than not, Lindy finds, they're one and the same.",
+        "image": "images/uploads/shit,actually.jpg"
+    },
+    {
+        "category": "All"
+    }
+]

@@ -36,16 +36,26 @@
                 </a>
             </div>
             <div class="book-content">
+                
             <?php 
 				$img = $row["img_url"];
+                $img_2 = $row["sec_img"];
+                $cat = $row["category"];
 				if(!$img) $img = "images/default.jpg";
 				echo '<img class="book-img-large" src="' . $img . '">';
+                if(!$img_2) $img_2 = "images/default.jpg";
+                echo '<img class="book-img-large" src="' . $img_2 . '">';
 				?> 
 				<?php 
 					mysqli_free_result($result);
 				?>
             </div>
-            <div class="book-info"></div>
+            <img class="shelf-small" src="./images/shelf.png" alt="shelf" />
+            <div class="book-info">
+                <?php
+                    echo '<h5>' . $cat . '</h5>';
+                ?>
+            </div>
         </div>
     </main>
     

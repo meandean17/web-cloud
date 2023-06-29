@@ -24,43 +24,35 @@ a {
     font-size: x-large;
 }
 
-main {
-    height: 100%;
+.category-select {
+    position: absolute;
+    right: 5%;
 }
 
-.content-wrapper {
-    background: url(../images/empty_shelf.jpg) no-repeat;
-    background-position: center center;
-    background-size: contain;
-    width: 100%;
+main {
     height: 100%;
 }
 
 .book-grid {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    height: 76%;
-    width: 60%;
-    gap: 8%;
+    align-items: center;
+}
+
+.shelf {
+    width: 70%;
 }
 
 .book-row {
+    padding-top: 3rem;
     display: flex;
-    height: 100%;
-    overflow: hidden;
-    justify-content: center;
-    gap: 8%;
+    width: 70%;
+    justify-content: space-evenly;
+
 }
 
 .book-data {
-    background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px);
-    box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 17%;
+    text-align: center;
 }
 
 .shorthand-container {
@@ -82,48 +74,40 @@ main {
     transition: all 0.5s;
 }
 
-.book-data a {
-    width: 100%;
-}
-
 .book-img {
-    width: 100%;
-    height: 100%;
+    height: 10rem;
+    aspect-ratio: 1 / 1.3;
 }
 
 .book-content {
-    max-width: 300px;
-    max-height: 350px;
     display: flex;
-    aspect-ratio: 1 / 1.1;
-    width: 30%;
-    margin: 0 auto;
-
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10%;
+    max-width: 214px;
+    display: flex;
+    margin: 10px auto 0px;
+    z-index: 1;
 }
 
 .book-img-large {
     background: linear-gradient(to right, rgb(60, 13, 20) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px), url(https://images-na.ssl-images-amazon.com/images/I/51pnouuPO5L.jpg);
     box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    margin: 0 auto;
     margin-top: 20%;
     width: 100%;
     height: 100%;
 }
 
 .book-content-wrapper {
-    background: url(../images/empty_single_shelf_desktop.jpg) no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
 
 .return-button-area {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    margin: 20px 0px;
 
 }
